@@ -1,0 +1,245 @@
+/* font- family link */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin: 46px 100px;
+}
+/* common css */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  padding: 16px 40px;
+  font-size: 24px;
+  line-height: 34px;
+  cursor: pointer;
+  border: none;
+}
+
+/* CSS for specific sections */
+.header {
+  width: full;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 54px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+.nav-items li {
+  list-style: none;
+  color: black;
+}
+.nav-item a {
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.banner {
+  display: flex;
+  gap: 24px;
+  padding: 60px;
+  background-color: #f4f6f5;
+  border-radius: 60px;
+  margin-top: 56px;
+}
+
+.right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.right_side h1 {
+  font-weight: 900;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+.rotated-div {
+  width: 200px;
+  transform: rotate(-2deg);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#rotateddiv1 {
+  background-color: white;
+}
+#rotateddiv2 {
+  background-color: #ebd96b;
+}
+
+.text {
+  transform: rotate(2deg);
+  position: relative;
+}
+
+.shop-now-btn {
+  width: 220px;
+}
+.left_side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS for brandding */
+.branding {
+  background-color: #ebd96b;
+  height: 186px;
+}
+
+.branding-img {
+  display: flex;
+  gap: 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto 0;
+}
+.branding-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+/* CSS for new arrivals */
+.new-arrivals {
+  margin-top: 60px;
+  gap: 24px;
+}
+
+.card-container {
+  display: flex;
+  gap: 70px;
+  margin-top: 50px;
+}
+.new-arrivals h2 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  cursor: pointer;
+  gap: 28px;
+}
+.card img {
+  width: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.description p {
+  color: #7f7f7f;
+}
+
+.pay_day {
+  background-color: #e6c744;
+}
+.pay_day_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pay_day_content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.pay_day_content h2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+.date {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.download_instruction {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download_app {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.download_app p {
+  color: #7c7c7c;
+}
+
+.join_community {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #e5c643;
+  text-align: center;
+  padding: 140px 390px;
+  color: white;
+}
+form {
+  display: flex;
+  flex-direction: row;
+
+  border: 1px solid grey;
+  padding: 1px;
+}
+
+input {
+  flex-grow: 2;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+form:focus-within {
+  outline: 1px solid black;
+}
+
+button {
+  border: 1px solid black;
+  background: black;
+  color: white;
+}
+
+/* responsive design */
