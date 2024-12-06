@@ -6,11 +6,19 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Font Family -->
+    <!-- Font Family POPPINS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Family ROBOTO	 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -37,7 +45,25 @@
         <button>Sign Up</button>
       </nav>
       <i class="hamburger-menu fa-solid fa-bars"></i>
+
+      <!-- Sidebar -->
+      <div class="nav-overlay">
+        <div class="sidebar__top">
+          <img src="./assets/logo.png" alt="logo" width="150" height="60" />
+          <i class="close fa-solid fa-xmark"></i>
+        </div>
+        <div class="sidebar__bottom">
+          <ul class="sidebar__bottom--items">
+            <li class="sidebar__bottom--items"><a href=""> catalogue </a></li>
+            <li class="sidebar__bottom--items"><a href=""> fashion </a></li>
+            <li class="sidebar__bottom--items"><a href=""> favorite </a></li>
+            <li class="sidebar__bottom--items"><a href=""> lifestyle </a></li>
+          </ul>
+          <button>Sign Up</button>
+        </div>
+      </div>
     </header>
+
     <main>
       <!-- landing page -->
       <!-- Banner Section -->
@@ -273,10 +299,11 @@
       <section class="join_community">
         <h1>JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO</h1>
         <p>Type your email down below and be young wild generation</p>
-        <div class="email-input">
-          <input type="email" placeholder="Add your email here" />
-          <button>SEND</button>
-        </div>
+
+        <form action="" class="email-input">
+          <input required type="email" placeholder="Add your email here" />
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
     <!-- Footer Section -->
@@ -353,13 +380,12 @@
           <li>FAQs</li>
         </ul>
         <ul>
-          <li>Company</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Support</li>
-          <li>Careers</li>
+          <li>Legal</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
         </ul>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
