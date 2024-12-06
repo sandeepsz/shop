@@ -229,6 +229,7 @@ i.hamburger-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 140px;
 }
 .pay_day_container img {
   width: 100%;
@@ -498,24 +499,28 @@ i.hamburger-menu {
   /* Pay day Content  */
 
   .pay_day {
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .pay_day_content {
     gap: 5px;
   }
+  .pay_day_container {
+    max-width: 100%;
+    align-items: center;
+    gap: 30px;
+  }
 
   .pay_day_container img {
-    max-width: 60%;
+    max-width: 50%;
     gap: 40px;
-    height: 100%;
   }
 
   .pay_day_content h2 {
     font-size: 20px;
   }
   .pay_day_content p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .date {
     font-weight: 900;
