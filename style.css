@@ -76,6 +76,7 @@ button {
 .nav-item a {
   font-size: 20px;
   line-height: 33px;
+  text-transform: uppercase;
 }
 
 .banner {
