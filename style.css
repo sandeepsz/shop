@@ -287,13 +287,35 @@ button {
   background-color: var(--color-black);
   color: var(--color-white);
 }
+.footer_desc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.social_media_icon {
+  width: 80px;
+}
 
 .links {
   display: flex;
+  justify-content: space-around;
+  gap: 100px;
 }
 
 .links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   list-style: none;
+}
+
+.links ul li:first-child {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.links ul li:not(:first-child) {
+  opacity: 0.6;
 }
 
 /* Responsive Design */
