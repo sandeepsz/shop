@@ -10,6 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -43,7 +44,7 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  gap: 54px;
+  gap: 20px;
 }
 .nav-items {
   display: flex;
@@ -55,7 +56,7 @@ button {
   color: black;
 }
 .nav-item a {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 33px;
 }
 
@@ -239,6 +240,11 @@ form:focus-within {
 button {
   border: 1px solid black;
   background: black;
+  color: white;
+}
+
+.footer {
+  background-color: black;
   color: white;
 }
 
