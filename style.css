@@ -59,13 +59,18 @@ button {
 .nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .nav-items {
   display: flex;
   align-items: center;
-  gap: 65px;
+  gap: 40px;
+}
+i.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .nav-items li {
@@ -75,7 +80,6 @@ button {
 
 .nav-item a {
   font-size: 20px;
-  line-height: 33px;
   text-transform: uppercase;
 }
 
@@ -111,10 +115,12 @@ button {
 
 #rotateddiv1 {
   background-color: var(--color-white);
+  padding: 0 5px;
 }
 
 #rotateddiv2 {
   background-color: var(--color-yellow);
+  padding: 0 5px;
 }
 
 .text {
@@ -143,9 +149,9 @@ button {
 }
 
 .branding-img {
-  width: 800px;
+  width: 1000px;
   display: flex;
-  gap: 2px;
+  gap: 100px;
   justify-content: space-evenly;
   align-items: center;
   margin: auto 0;
@@ -208,6 +214,11 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.pay_day_container img {
+  width: 80%;
+  height: 80%;
+  object-fit: fill;
+}
 
 .pay_day_content {
   display: flex;
@@ -223,6 +234,14 @@ button {
 .date {
   font-weight: 900;
   font-size: 20px;
+}
+
+/* Young's Favorite */
+
+.youngFav_card-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
 }
 
 .download_instruction {
@@ -253,31 +272,49 @@ button {
   color: var(--color-white);
 }
 
-form {
+/* Email Input Button */
+
+.email-input {
   display: flex;
-  flex-direction: row;
-  border: 1px solid var(--color-grey);
-  padding: 1px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 300px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-input {
-  flex-grow: 2;
+.email-input input {
+  flex: 1;
+  background-color: transparent;
   border: none;
-  padding: 4px 10px;
-}
-
-input:focus {
   outline: none;
+  font-size: 16px;
+  padding: 5px;
 }
 
-form:focus-within {
-  outline: 1px solid var(--color-black);
+.email-input input::placeholder {
+  color: #aaa;
 }
 
-button {
-  border: 1px solid var(--color-black);
-  background: var(--color-black);
-  color: var(--color-white);
+.email-input button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-input button:hover {
+  background-color: #444;
 }
 
 .footer {
@@ -320,3 +357,46 @@ button {
 }
 
 /* Responsive Design */
+@media (max-width: 768px) {
+  i.hamburger-menu {
+    display: block;
+  }
+
+  .header img {
+    width: 150px;
+  }
+  .nav {
+    display: none;
+  }
+
+  /* Banner */
+  .banner {
+    display: flex;
+    gap: 24px;
+    padding: 60px;
+    background-color: var(--color-light-grey);
+    border-radius: 60px;
+    margin-top: 56px;
+  }
+
+  .right_side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .right_side h1 {
+    font-weight: 900;
+    font-size: 10px;
+    padding-left: 10px;
+  }
+
+  .rotated-div {
+    width: 200px;
+    transform: rotate(-2deg);
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
