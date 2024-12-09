@@ -98,6 +98,9 @@ i.hamburger-menu {
   transition: right 0.3s ease;
   z-index: 999;
 }
+.sidebar__bottom--items {
+  text-transform: uppercase;
+}
 
 /*--------------------- Bannner---------------------- */
 
@@ -474,7 +477,7 @@ i.hamburger-menu {
     gap: 20px;
   }
   .branding-img img {
-    max-width: 80px;
+    max-width: 50px;
     object-fit: cover;
   }
   .branding::-webkit-scrollbar {
