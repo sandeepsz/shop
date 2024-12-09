@@ -119,6 +119,7 @@ i.hamburger-menu {
   font-weight: 900;
   font-size: 40px;
   padding-left: 10px;
+  text-transform: uppercase;
 }
 
 .rotated-div {
@@ -131,12 +132,10 @@ i.hamburger-menu {
 
 #rotateddiv1 {
   background-color: var(--color-white);
-  padding: 0 5px;
 }
 
 #rotateddiv2 {
   background-color: var(--color-yellow);
-  padding: 0 5px;
 }
 
 .text {
@@ -174,8 +173,7 @@ i.hamburger-menu {
 }
 
 .branding-img img {
-  width: 100%;
-  height: 100%;
+  max-width: 100px;
   object-fit: cover;
   mix-blend-mode: multiply;
 }
@@ -223,6 +221,7 @@ i.hamburger-menu {
 
 .pay_day {
   background-color: var(--color-dark-yellow);
+  padding: 0 20px;
 }
 
 .pay_day_container {
@@ -232,8 +231,8 @@ i.hamburger-menu {
   gap: 140px;
 }
 .pay_day_container img {
+  max-width: 50%;
   width: 100%;
-  height: 100%;
   object-fit: fill;
 }
 
@@ -441,7 +440,7 @@ i.hamburger-menu {
 
   /* Branding */
   .branding {
-    max-width: 500px;
+    max-width: 1000px;
     height: 60px;
     gap: 30px !important;
     overflow-x: scroll;
@@ -449,6 +448,7 @@ i.hamburger-menu {
     -ms-overflow-style: none;
   }
   .branding-img {
+    max-width: 100%;
     gap: 20px;
   }
   .branding-img img {
