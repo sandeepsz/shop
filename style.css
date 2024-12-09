@@ -379,10 +379,20 @@ i.hamburger-menu {
   opacity: 0.6;
 }
 
+@media (max-width: 320px) {
+  .header img {
+    max-width: 40px;
+  }
+
+  .youngFav_card-container img {
+    width: 250px !important;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .wrapper {
-    margin: 20px 30px;
+    margin: 5px 10px;
   }
   i.hamburger-menu {
     display: block;
@@ -407,21 +417,23 @@ i.hamburger-menu {
   /* Banner */
 
   .banner {
-    padding: 20px;
+    padding: 10px !important;
     border-radius: 30px;
   }
 
   .right_side {
-    gap: 14px;
-    font-size: 14px;
-    width: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 26px;
   }
 
   .right_side p {
     display: none;
   }
   .right_side h1 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .right_side,
@@ -430,7 +442,7 @@ i.hamburger-menu {
   }
 
   .left_side img {
-    max-width: 100%;
+    width: 100%;
     object-fit: fill;
   }
 
@@ -517,8 +529,7 @@ i.hamburger-menu {
   }
   .pay_day_container {
     max-width: 100%;
-    align-items: center;
-    gap: 30px;
+    gap: 10px;
   }
 
   .pay_day_container img {
@@ -554,7 +565,7 @@ i.hamburger-menu {
     display: none;
   }
   .youngFav_card-container img {
-    width: 400px;
+    width: 365px;
   }
 
   /* Download Instruction */
@@ -573,7 +584,7 @@ i.hamburger-menu {
   .join_community {
     gap: 10px;
     text-align: center;
-    padding: 40px 40px;
+    padding: 30px 10px;
     color: var(--color-white);
   }
   .join_community h1 {
@@ -581,7 +592,7 @@ i.hamburger-menu {
   }
   /* Email Input Button */
   .email-input {
-    max-width: 100%;
+    width: 100%;
   }
 
   .email-input input {
@@ -703,10 +714,4 @@ i.hamburger-menu {
   .footer {
     width: 122% !important;
   }
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1440px) {
 }
