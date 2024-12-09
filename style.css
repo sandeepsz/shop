@@ -24,12 +24,10 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  margin: 0 auto;
-  max-width: 1270px;
 }
 
 .wrapper {
-  max-width: 100%;
+  max-width: 1920px;
   margin: 46px 100px;
 }
 
@@ -54,6 +52,8 @@ button {
 .header {
   height: 62px;
   display: flex;
+  align-items: center;
+  align-content: center;
   justify-content: space-between;
   align-items: center;
 }
@@ -98,6 +98,8 @@ i.hamburger-menu {
   transition: right 0.3s ease;
   z-index: 999;
 }
+
+/*--------------------- Bannner---------------------- */
 
 .banner {
   display: flex;
@@ -153,23 +155,22 @@ i.hamburger-menu {
   object-fit: cover;
 }
 
-/* Branding */
+/*--------------------- Branding---------------------- */
+
 .branding {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
   background-color: var(--color-yellow);
-  height: 186px;
+  height: 176px;
 }
 
 .branding-img {
-  max-width: 1000px;
   display: flex;
   gap: 100px;
   justify-content: space-evenly;
   align-items: center;
-  margin: auto 0;
 }
 
 .branding-img img {
@@ -185,8 +186,9 @@ i.hamburger-menu {
 }
 
 .card-container {
+  width: 100%;
   display: flex;
-  gap: 70px;
+  gap: 50px;
   margin-top: 50px;
 }
 
@@ -284,18 +286,23 @@ i.hamburger-menu {
   gap: 20px;
   background-color: var(--color-dark-yellow);
   text-align: center;
-  padding: 140px 390px;
+  padding: 50px 20px;
   color: var(--color-white);
 }
-
+.join-community-text {
+  max-width: 600px;
+  text-transform: uppercase;
+  text-align: center;
+}
 /* Email Input Button */
 
 .email-input {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 574px;
   align-items: center;
   border-radius: 10px;
   padding: 5px;
@@ -417,6 +424,11 @@ i.hamburger-menu {
     font-size: 20px;
   }
 
+  .right_side,
+  button {
+    font-size: 14px;
+  }
+
   .left_side img {
     max-width: 100%;
     object-fit: fill;
@@ -427,12 +439,12 @@ i.hamburger-menu {
   }
 
   .shop-now-btn {
-    padding: 10px;
+    padding: 5px 10px;
     font-size: 14px;
   }
 
   button {
-    padding: 4px 8px;
+    padding: 4px 6px;
     font-size: 14px;
     line-height: 34px;
     max-width: 80%;
@@ -440,7 +452,6 @@ i.hamburger-menu {
 
   /* Branding */
   .branding {
-    max-width: 1000px;
     height: 60px;
     gap: 30px !important;
     overflow-x: scroll;
@@ -448,7 +459,6 @@ i.hamburger-menu {
     -ms-overflow-style: none;
   }
   .branding-img {
-    max-width: 100%;
     gap: 20px;
   }
   .branding-img img {
@@ -667,4 +677,36 @@ i.hamburger-menu {
   .sidebar__bottom--items li {
     list-style: none;
   }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    width: 100%;
+  }
+  .banner {
+    width: 100% !important;
+  }
+  .branding {
+    width: 122% !important;
+  }
+
+  .pay_day {
+    width: 122% !important;
+  }
+  .download_instruction {
+    width: 100% !important;
+  }
+  .join_community {
+    width: 122% !important;
+    margin: auto auto;
+  }
+  .footer {
+    width: 122% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
 }
