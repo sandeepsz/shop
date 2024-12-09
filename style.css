@@ -24,6 +24,8 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .wrapper {
@@ -161,6 +163,9 @@ i.hamburger-menu {
 /*--------------------- Branding---------------------- */
 
 .branding {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   width: 100%;
   display: flex;
   align-items: center;
@@ -266,6 +271,9 @@ i.hamburger-menu {
 }
 
 .download_instruction {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -284,6 +292,9 @@ i.hamburger-menu {
 }
 
 .join_community {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -344,6 +355,9 @@ i.hamburger-menu {
 }
 
 .footer {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   display: flex;
   padding: 100px;
   justify-content: space-between;
@@ -559,7 +573,7 @@ i.hamburger-menu {
   .youngFav_card-container {
     gap: 15px;
     margin-top: 20px;
-    overflow-y: scroll;
+    overflow-x: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
   }
